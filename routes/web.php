@@ -10,7 +10,4 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::post('/task','TaskController@add');
-
-Route::delete('/task/{task}','TaskController@delete');
+Route::resource('tasks', 'TaskController');
